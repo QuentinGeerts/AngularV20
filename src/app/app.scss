@@ -1,0 +1,19 @@
+$header-height: 200px;
+$footer-height: 100px;
+$main-height: calc(100vh - $header-height - $footer-height);
+
+:host {
+
+  header {
+    height: $header-height;
+  }
+
+  main {
+    height: $main-height;
+  }
+
+  footer {
+    height: $footer-height;
+  }
+
+}

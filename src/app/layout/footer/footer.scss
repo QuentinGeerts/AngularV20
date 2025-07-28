@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0A0F27;
+
+  a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    transition: 0.5s color ease;
+  }
+
+  a:hover {
+    color: lightgrey;
+  }
+
+}
