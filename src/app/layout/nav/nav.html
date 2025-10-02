@@ -1,1 +1,14 @@
-<p>nav works!</p>
+@if (routes) {
+<ul>
+  @for (route of routes; track route.title) {
+
+  <li>
+    <a [routerLink]="route.path">{{ route.title }}</a>
+    @for (subroute of route.children; track subroute.title) {
+      <li><a [routerLink]="subroute.path">{{subroute.title}}</a></li>
+    }
+  </li>
+
+  }
+</ul>
+}
